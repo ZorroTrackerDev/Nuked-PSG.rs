@@ -30,7 +30,7 @@ class PSGChip {
     }
 
     test(testValue) {
-        return addon.test(this.inner, testValue)
+        addon.test(this.inner, testValue)
     }
 
     generate() {
