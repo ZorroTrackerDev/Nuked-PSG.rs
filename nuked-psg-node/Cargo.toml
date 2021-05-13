@@ -1,0 +1,18 @@
+[package]
+name = "nuked-psg-node"
+version = "0.1.0"
+authors = ["ShinySaana <shinysaana@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+nuked-psg-rs = { path = "../nuked-psg-rs" }
+
+[dependencies.neon]
+version = "0.8"
+default-features = false
+features = ["napi-4"]

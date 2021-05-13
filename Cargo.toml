@@ -1,0 +1,6 @@
+[workspace]
+members = [
+    "nuked-psg-sys",
+    "nuked-psg-rs",
+    "nuked-psg-node"
+]

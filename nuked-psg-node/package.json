@@ -1,0 +1,37 @@
+{
+  "name": "nuked-psg-node",
+  "version": "0.1.0",
+  "description": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ZorroTrackerDev/Nuked-PSG.rs"
+  },
+  "main": "index.js",
+  "types": "index.d.ts",
+  "scripts": {
+    "build": "cargo-cp-artifact -nc build/nuked-psg-node.node -- cargo build --message-format=json-render-diagnostics",
+    "build:win32:x86": "./scripts/build-win32-x86.sh",
+    "build:win32:x64": "./scripts/build-win32-x64.sh",
+    "build:win32:arm64": "./scripts/build-win32-arm64.sh",
+    "build:linux:x86": "./scripts/build-linux-x86.sh",
+    "build:linux:x64": "./scripts/build-linux-x64.sh",
+    "build:linux:arm64": "./scripts/build-linux-arm64.sh",
+    "build:darwin:x64": "./scripts/build-darwin-x64",
+    "build:darwin:arm64": "./scripts/build-darwin-arm64.sh",
+    "install": "prebuild-install --verbose --force --runtime napi --target 4",
+    "test": "cargo test"
+  },
+  "author": "ShinySaana",
+  "binary": {
+    "napi_versions": [
+      4
+    ]
+  },
+  "devDependencies": {
+    "cargo-cp-artifact": "^0.1",
+    "typescript": "*"
+  },
+  "dependencies": {
+    "prebuild-install": "^5.3.3"
+  }
+}

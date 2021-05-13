@@ -1,0 +1,3 @@
+[submodule "nuked-psg-sys/vendor/Nuked-PSG"]
+	path = nuked-psg-sys/vendor/Nuked-PSG
+	url = https://github.com/ZorroTrackerDev/Nuked-PSG.git
